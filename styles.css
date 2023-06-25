@@ -1,0 +1,31 @@
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li img {
+    max-width: 55px;
+    display: block;
+}
+
+.nav {
+    display: flex;
+}
+
+
+.right {
+    display: flex;
+    margin-left: 65vw;
+    gap: 2em
+}
+
+@media (max-width: 768px) {
+    .right {
+        display: flex;
+        margin-left: 25vw;
+        gap: 2em
+    }
+  }
