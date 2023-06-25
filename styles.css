@@ -1,4 +1,6 @@
-*,html, body{
+*,
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -9,20 +11,22 @@
     background-color: #1F2937;
 }
 
-.header > ul li a {
-    color:aliceblue
+.header>ul li a {
+    color: aliceblue
 }
 
 a {
     text-decoration: none;
 }
 
-ul, li {
+ul,
+li {
     list-style-type: none;
 }
 
 .logo {
-    font-size:23px;
+    font-size: 28px;
+    font-family: cursive;
 }
 
 .nav {
@@ -38,8 +42,8 @@ ul, li {
 
 /* hero section */
 
-.header .hero li > * {
-    color:aliceblue;
+.header .hero li>* {
+    color: aliceblue;
 }
 
 .header .hero li img {
@@ -47,22 +51,60 @@ ul, li {
 }
 
 #hr {
-    padding: 2rem 5rem ;
+    padding: 2rem 5rem;
     display: flex;
     gap: 3px;
     flex-direction: row;
 }
 
-#hr > li {
+#hr>li {
     flex: 1;
 }
 
-#hr > li > .title-para {
-	font-size: 42px;
+#hr>li>.title-para {
+    font-size: 42px;
 }
 
-#hr > li > p {
-	font-size: 21px;
+#hr>li>p {
+    font-size: 21px;
+}
+
+#hr>li>.claim {
+    width: 13rem;
+    height: 3rem;
+    
+    background-color: rgb(107, 107, 233);
+
+    margin-top: 9px;
+
+}
+
+/* Offering */
+.offering {
+    padding: 2rem 3rem;
+}
+
+.offering>h2 {
+    text-align: center;
+    text-transform: initial;
+    font-size: 27px;
+    font-family: cursive;
+}
+
+.offering>ul {
+    padding-top: 5px;
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.offering>ul>li {
+    flex: 1;
+
+}
+
+.offering>ul>li>img {
+    max-width: 40%;
 }
 
 @media (max-width: 768px) {
@@ -74,17 +116,28 @@ ul, li {
 
     /* hero section */
 
-#hr > li > img {
-	width: 170px;
-	height: 200px;
-}
+    #hr>li>img {
+        width: 170px;
+        height: 200px;
+    }
 
-#hr > li > .title-para {
-	font-size: 21px;
-}
+    #hr>li>.title-para {
+        font-size: 21px;
+    }
 
-#hr > li > p {
-	font-size: 12px;
-}
+    #hr>li>p {
+        font-size: 12px;
+    }
+
+    /* offering*/
+    .offering>ul {
+        padding: 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .offering>ul>li>img {
+        max-width: 20%;
+    }
 
 }
