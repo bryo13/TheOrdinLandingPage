@@ -25,8 +25,9 @@ li {
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 24px;
     font-family: cursive;
+    color: #F9FAF8
 }
 
 .nav {
@@ -62,52 +63,130 @@ li {
 }
 
 #hr>li>.title-para {
-    font-size: 42px;
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8
 }
 
 #hr>li>p {
-    font-size: 21px;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 #hr>li>.claim {
+    border: none;
     width: 13rem;
     height: 3rem;
-    
-    background-color: rgb(107, 107, 233);
-
+    background-color: #3882F5;
     margin-top: 9px;
+    border-radius: 25px;
 
 }
 
 /* Offering */
 .offering {
-    padding: 2rem 3rem;
+    padding: 2rem 5rem;
 }
 
 .offering>h2 {
     text-align: center;
     text-transform: initial;
-    font-size: 27px;
+    font-size: 36px;
     font-family: cursive;
+    color: #1F2937;
 }
 
 .offering>ul {
     padding-top: 5px;
+    padding-left: 5rem;
     display: flex;
-    gap: 2px;
+    gap: 5px;
     flex-wrap: wrap;
 }
 
 .offering>ul>li {
     flex: 1;
 
+
 }
 
 .offering>ul>li>img {
-    max-width: 40%;
+    max-width: 45%;
+    border-radius: 24px;
 }
 
-@media (max-width: 768px) {
+/* testimonial */
+.testimonial {
+    background-color: #E5E7Eb;
+    width: 100%;
+    height: auto;
+}
+
+.testimonial>.quote {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 5vh;
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1F2937
+}
+
+.testimonial>.quote>.owner {
+    font-size: large;
+    font-weight: bolder;
+    font-size: 37px;
+    padding: 3rem 3rem;
+}
+
+/* call to action*/
+
+.call {
+    width: 100%;
+    height: 7rem;
+}
+
+
+.call>.inner {
+    border-radius: 15px;
+    width: 70%;
+    height: auto;
+    background-color: #3882F5;
+    margin-top: 3rem;
+    margin-left: 15%;
+    display: flex;
+}
+
+.call>.inner>li {
+    flex: 1;
+    padding-left: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#call-button {
+    border: aliceblue;
+    width: 9rem;
+    height: 2rem;
+    border-radius: 12px;
+    position: relative;
+    left: 6rem;
+    top: 12px;
+    background-color: transparent;
+    border: 2px solid #F9FAF8;
+}
+
+footer {
+    width: 100%;
+    height: 14px;
+    background-color: #1F2937;
+    color: #E5E7Eb;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
     .right {
         display: flex;
         margin-left: 30vw;
@@ -138,6 +217,31 @@ li {
 
     .offering>ul>li>img {
         max-width: 20%;
+    }
+
+
+    .call {
+        width: 100%;
+        height: 8rem;
+    }
+
+    .call>.inner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .call>.inner>li {
+        flex: 1;
+        padding-left: 1dvb;
+        padding-top: 2px;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    #call-button {
+        position: relative;
+        left: 0%;
+        
     }
 
 }
